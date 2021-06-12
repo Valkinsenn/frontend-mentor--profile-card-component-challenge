@@ -54,8 +54,9 @@ Here, the main profile box is the same, but it's a bit larger in width on larger
 
 To see how you can add code snippets, see below:
 
+#### The HTML for the shape cluster in the background:
+
 ```html
-<!-- For the shapes in the background. This is what makes the magic happen back there. -->
 <div class="bg-shapes">
   <img
     src="./images/bg-pattern-top.svg"
@@ -70,9 +71,9 @@ To see how you can add code snippets, see below:
 </div>
 ```
 
-```css
-/* BG Shapes (this styles the above HTML) */
+#### CSS for the background shapes in the project:
 
+```css
 .bg-shapes {
   align-items: center;
   display: flex;
