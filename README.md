@@ -47,6 +47,7 @@ Here, the main profile box is the same, but it's a bit larger in width on larger
 - A mobile-first workflow
 - Flexbox
 - Custom CSS through SASS
+- Github Desktop (for Github commits)
 
 ### What I learned
 
