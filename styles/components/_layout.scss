@@ -1,0 +1,96 @@
+/* =======================================================
+LAYOUT
+======================================================= */
+
+@use "../abstracts/" as a;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-content {
+  background-color: a.$page-bg-color;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 1.25rem;
+  width: 100vw;
+}
+
+.profile-box {
+  background-color: a.$profile-bg-color;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(black, 0.15);
+  margin: auto;
+  max-width: 375px;
+  //   height: 500px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.avatar {
+  border: 5px solid white;
+  border-radius: 50%;
+  display: block;
+  height: auto;
+  margin: auto;
+  position: relative;
+  top: -55px;
+  width: 110px;
+}
+
+.flair-box {
+  object-fit: cover;
+  height: 145px;
+  width: 100%;
+}
+
+.profile-details {
+  //   border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -2.25rem;
+}
+
+.profile-stats {
+  border-top: 1px solid rgba(a.$header-color, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1.5rem;
+}
+
+.bg-img-bottom,
+.bg-img-top {
+  height: 978px;
+  width: 978px;
+}
+
+.bg-img-top {
+  left: -800px;
+  position: fixed;
+  top: -600px;
+}
+
+.bg-img-bottom {
+  right: -800px;
+  position: fixed;
+  bottom: -600px;
+}
+
+@media screen and (min-width: 576px) {
+  .bg-img-top {
+    left: -20%;
+    top: -50%;
+    z-index: 1;
+  }
+
+  .bg-img-bottom {
+    right: -20%;
+    bottom: -50%;
+    z-index: 1;
+  }
+}

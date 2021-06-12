@@ -16,23 +16,56 @@
     <title>Frontend Mentor | Profile card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="page-content">
+      <div class="profile-box">
+        <img
+          src="./images/bg-pattern-card.svg"
+          alt="Bubbles"
+          class="flair-box"
+        />
+        <img
+          alt="Victor Crest"
+          class="avatar"
+          src="./images/image-victor.jpg"
+        />
+        <div class="profile-details">
+          <h1 class="username">Victor Crest</h1>
+          <h2 class="age">26</h2>
+        </div>
+        <h3 class="location">London</h3>
+        <div class="profile-stats">
+          <div class="stat-box">
+            <h1 class="number">80K</h1>
+            <h5 class="category">Followers</h5>
+          </div>
+          <div class="stat-box">
+            <h1 class="number">803K</h1>
+            <h5 class="category">Likes</h5>
+          </div>
+          <div class="stat-box">
+            <h1 class="number">1.4K</h1>
+            <h5 class="category">Photos</h5>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/bg-pattern-top.svg"
+        alt="Large bubble"
+        class="bg-img-top"
+      />
+      <img
+        src="./images/bg-pattern-bottom.svg"
+        alt="Large bubble"
+        class="bg-img-bottom"
+      />
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Valkinsenn</a>.
+      </div>
     </div>
   </body>
 </html>

@@ -3,3 +3,62 @@ TYPOGRAPHY
 ======================================================= */
 
 @use "../abstracts/" as a;
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: a.$header-color;
+  font-family: a.$primary-font;
+}
+
+h1 {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-left: 0.75rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.5rem 0 1.5rem;
+  text-align: center;
+}
+
+h5 {
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-top: 0.35rem;
+}
+
+/* Special Typography Classes */
+
+.number {
+  text-align: center;
+}
+
+.category {
+  color: rgba(a.$header-color, 0.75);
+  text-align: center;
+}
+
+/* Attribution Stuph */
+.attribution {
+  color: a.$header-color;
+  font-family: a.$primary-font;
+  font-size: 11px;
+  text-align: center;
+  z-index: 10;
+}
+.attribution a {
+  color: hsl(180, 100%, 50%);
+  text-decoration: none;
+}
