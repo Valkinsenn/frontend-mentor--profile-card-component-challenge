@@ -14,9 +14,6 @@ Greetings, everyone! This is my solution to the [Profile card component challeng
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -58,22 +55,49 @@ Here, the main profile box is the same, but it's a bit larger in width on larger
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!-- For the shapes in the background. This is what makes the magic happen back there. -->
+<div class="bg-shapes">
+  <img
+    src="./images/bg-pattern-top.svg"
+    alt="Large bubble"
+    class="bg-img-top"
+  />
+  <img
+    src="./images/bg-pattern-bottom.svg"
+    alt="Large bubble"
+    class="bg-img-bottom"
+  />
+</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* BG Shapes (this styles the above HTML) */
+
+.bg-shapes {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  width: 100vw;
+}
+
+.bg-img-bottom,
+.bg-img-top {
+  height: 1000px;
+  width: 1000px;
+  z-index: 1;
+}
+
+.bg-img-bottom {
+  transform: translateY(50%) translateX(-75px);
+}
+
+.bg-img-top {
+  transform: translateY(-50%) translateX(75px);
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉")
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
 
@@ -89,7 +113,3 @@ I'd like to work a bit more on 3D stuff as I'm still getting used to the idea of
 - Website - (I don't have a website yet - I'm working on it!!!)
 - Frontend Mentor - [@valkinsenn](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@valkinsenn](https://www.twitter.com/valkinsenn)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
