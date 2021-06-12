@@ -72,37 +72,32 @@ LAYOUT
   padding: 1.5rem 2rem 1.5rem;
 }
 
-.bg-img-bottom,
-.bg-img-top {
-  height: 978px;
-  width: 978px;
+/* BG Shapes */
+.bg-shapes {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  width: 100vw;
 }
 
+.bg-img-bottom,
 .bg-img-top {
-  left: -800px;
-  position: fixed;
-  top: -600px;
+  height: 1000px;
+  width: 1000px;
+  z-index: 1;
 }
 
 .bg-img-bottom {
-  right: -800px;
-  position: fixed;
-  bottom: -600px;
+  transform: translateY(50%) translateX(-75px);
 }
 
-@media screen and (min-width: 576px) {
-  .bg-img-top {
-    left: -20%;
-    top: -50%;
-    z-index: 1;
-  }
-
-  .bg-img-bottom {
-    right: -20%;
-    bottom: -50%;
-    z-index: 1;
-  }
+.bg-img-top {
+  transform: translateY(-50%) translateX(75px);
 }
+
 /* =======================================================
 TYPOGRAPHY
 ======================================================= */
